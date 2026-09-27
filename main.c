@@ -278,7 +278,7 @@ char Menu()
     printf("A - Metodo Eliminacao Gaussiana\n\n");
     printf("B - Metodo Gauus Seidel\n\n");
     printf("S - Sair do Programa\n\n");
-    op=getche();
+    op = getche();
     //flush(stdin);
     printf("\n");
     return op;
