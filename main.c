@@ -29,7 +29,7 @@ int main()
     //scanf("%c",&op);
     op = 'x';
     //printf("\n");
-    while(op!='s')
+    while(op != 's')
     {
         op=Menu();
 //    }
@@ -100,9 +100,9 @@ void MostraMatriz(float mat[50][50], int n)
     //printf("\nA matriz eh:\n");
     //i=0;
     //j=0;
-    for(i=0; i<n; i++)//o indice 'i' é a variaçao da linha
+    for(i=0; i<n; i++)//o indice 'i' ï¿½ a variaï¿½ao da linha
     {
-        for(j=0; j<=n; j++)// o indice 'j' é a variaçao da coluna para se mostrar cada termo da matriz
+        for(j=0; j<=n; j++)// o indice 'j' ï¿½ a variaï¿½ao da coluna para se mostrar cada termo da matriz
         {
             printf("  %2.3f", mat[i][j]);
         //    scanf("%d",&mat[i][j]);
@@ -187,11 +187,11 @@ void seidel(float mat[50][50], int dim)
     c=0;
     //a=50;
     for(i=0;i<=dim-1;i++)//atrubuir valor zero a todos os elementos do vetor x[i] 
-    {                    //para se inciar a iteraçao
+    {                    //para se inciar a iteraï¿½ao
         x[i]=0;
     }
 
-    for(a=0;a<=100;a++) // laço que fara 100 iteraçoes com os valores de x[i]
+    for(a=0;a<=100;a++) // laï¿½o que fara 100 iteraï¿½oes com os valores de x[i]
     {
         for(i=0;i<=dim-1;i++)//calcular o x[] de indice i
         {
@@ -200,11 +200,11 @@ void seidel(float mat[50][50], int dim)
             {
                 for(j=0;j<=i-1;j++)//para que nao se calcule x[i] dentro de si mesma e j nao seja igual a i
                 {
-                    c=x[j]*mat[i][j]/mat[i][i];//c é variavel auxiliar
+                    c=x[j]*mat[i][j]/mat[i][i];//c ï¿½ variavel auxiliar
                     k=c+k;//recebe a soma de todos os valores que serao colocados em 'c'
                 }
-                x[i]=x[i]-k;//resposta final de x[i] apos a iteraçao 'i'
-                k=0;//tem que ser zerado pra nao ocorrer de pegar valores da iteraçao anterior  
+                x[i]=x[i]-k;//resposta final de x[i] apos a iteraï¿½ao 'i'
+                k=0;//tem que ser zerado pra nao ocorrer de pegar valores da iteraï¿½ao anterior  
             }
             else//caso contrario...
             {
@@ -245,7 +245,7 @@ void Pivoteamento(float mat[50][50], int n)
         for(i;i<=n-1;i++)
         {
 
-            m=mat[i][a]/mat[a][a];  //este é o fator multiplicador que sera usado pra zerar os termos das colunas abaixo da diagonal principal
+            m=mat[i][a]/mat[a][a];  //este ï¿½ o fator multiplicador que sera usado pra zerar os termos das colunas abaixo da diagonal principal
            // printf("\no valor de m eh : %f\n",m);
             for(j;j<=n;j++)
             {
